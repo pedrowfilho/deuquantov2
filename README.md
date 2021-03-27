@@ -1,2 +1,2 @@
 # deuquantov2
-Atividade da disciplina de Promação para Dispositivos Móveis - SMD/UFC
+Atividade da disciplina de Programação para Dispositivos Móveis - SMD/UFC
