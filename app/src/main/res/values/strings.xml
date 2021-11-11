@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Deu Quanto?</string>
+    <string name="resultado">Resultado</string>
+    <string name="todo">TODO</string>
+    <string name="digite_o_valor_da_conta_ex_82_50">digite o valor da conta (ex: 82.50)</string>
+    <string name="qtd_de_pessoas">qtd. de pessoas</string>
+</resources>
