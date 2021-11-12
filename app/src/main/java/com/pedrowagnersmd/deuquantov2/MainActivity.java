@@ -48,13 +48,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
 
         Intent checkTTS = new Intent();
         checkTTS.setAction(TextToSpeech.Engine.ACTION_CHECK_TTS_DATA);
-        startActivityForResult(checkTTS, 1122);
+        startActivityForResult(checkTTS, 1);
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1122){
+        if(requestCode == 1){
             if(resultCode == TextToSpeech.Engine.CHECK_VOICE_DATA_PASS){
                 ttsPlayer = new TextToSpeech(this, this);
             }else {
@@ -79,14 +79,14 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
     public void afterTextChanged(Editable editable) {
         String valorRecuperado = editTextValor.getText().toString();
         String qtdPessoasRecuperado = editTextQtd.getText().toString();
-        DecimalFormat df = new DecimalFormat("#.00");
+        DecimalFormat decimal = new DecimalFormat("#.00");
         if(valorRecuperado.equals("") || qtdPessoasRecuperado.equals("")){
             Toast.makeText(getApplicationContext(), "Preencha todos os campos!", Toast.LENGTH_LONG).show();
         }else{
             double valorConta =Double.parseDouble(valorRecuperado);
             int qtdPessoas = Integer.parseInt(qtdPessoasRecuperado);
             double res = valorConta/qtdPessoas;
-            String resultado = df.format(res);
+            String resultado = decimal.format(res);
             textResultado.setText("Deu R$ " + resultado + " por pessoa.");
         }
     }
