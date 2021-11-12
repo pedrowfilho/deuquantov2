@@ -5,4 +5,6 @@
     <string name="digite_o_valor_da_conta_ex_82_50">digite o valor da conta (ex: 82.50)</string>
     <string name="qtd_de_pessoas">digite a qtd. de pessoas</string>
     <string name="logo_carteira_com_algumas_c_dulas">logo. Carteira com algumas cédulas.</string>
+    <string name="bot_o_para_compartilhamento">botão para compartilhamento</string>
+    <string name="bot_o_speak">botão speak</string>
 </resources>

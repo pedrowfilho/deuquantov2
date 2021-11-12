@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        Toolbar myToolbar = findViewById(R.id.my_toolbar);
         setSupportActionBar(myToolbar);
 
         editTextValor = findViewById(R.id.editTextValor);
