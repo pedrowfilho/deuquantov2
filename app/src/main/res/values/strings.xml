@@ -3,5 +3,6 @@
     <string name="resultado">Resultado</string>
     <string name="todo">TODO</string>
     <string name="digite_o_valor_da_conta_ex_82_50">digite o valor da conta (ex: 82.50)</string>
-    <string name="qtd_de_pessoas">qtd. de pessoas</string>
+    <string name="qtd_de_pessoas">digite a qtd. de pessoas</string>
+    <string name="logo_carteira_com_algumas_c_dulas">logo. Carteira com algumas cédulas.</string>
 </resources>

@@ -2,6 +2,7 @@ package com.pedrowagnersmd.deuquantov2;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
+        setSupportActionBar(myToolbar);
 
         editTextValor = findViewById(R.id.editTextValor);
         editTextQtd = findViewById(R.id.editTextQtd);
@@ -77,14 +80,14 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         String valorRecuperado = editTextValor.getText().toString();
         String qtdPessoasRecuperado = editTextQtd.getText().toString();
         DecimalFormat df = new DecimalFormat("#.00");
-        if(valorRecuperado == null || valorRecuperado.equals("") || qtdPessoasRecuperado == null || qtdPessoasRecuperado.equals("")){
+        if(valorRecuperado.equals("") || qtdPessoasRecuperado.equals("")){
             Toast.makeText(getApplicationContext(), "Preencha todos os campos!", Toast.LENGTH_LONG).show();
         }else{
             double valorConta =Double.parseDouble(valorRecuperado);
             int qtdPessoas = Integer.parseInt(qtdPessoasRecuperado);
             double res = valorConta/qtdPessoas;
             String resultado = df.format(res);
-            textResultado.setText("Deu R$ " + resultado + " pra cada.");
+            textResultado.setText("Deu R$ " + resultado + " por pessoa.");
         }
     }
 
