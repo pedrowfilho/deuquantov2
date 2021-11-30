@@ -81,13 +81,13 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
         String qtdPessoasRecuperado = editTextQtd.getText().toString();
         DecimalFormat decimal = new DecimalFormat("#.00");
         if(valorRecuperado.equals("") || valorRecuperado == null || qtdPessoasRecuperado.equals("") || qtdPessoasRecuperado == null){
-            Toast.makeText(getApplicationContext(), "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), R.string.preencha_os_campos, Toast.LENGTH_SHORT).show();
         }else{
             double valorConta =Double.parseDouble(valorRecuperado);
             int qtdPessoas = Integer.parseInt(qtdPessoasRecuperado);
             double res = valorConta/qtdPessoas;
             String resultado = decimal.format(res);
-            textResultado.setText("Deu R$ " + resultado + " por pessoa.");
+            textResultado.setText(getString(R.string.Deu) + resultado + getString(R.string.por_pessoa));
         }
     }
 
@@ -112,9 +112,9 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
 
         if(initStatus == TextToSpeech.SUCCESS){
             ttsPlayer.setLanguage(locale);
-            Toast.makeText(this, "TTS Ativado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tts_ativado, Toast.LENGTH_SHORT).show();
         }else if(initStatus == TextToSpeech.ERROR){
-            Toast.makeText(this, "Sem TTS ativado", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.tts_nao_ativado, Toast.LENGTH_SHORT).show();
         }
     }
 }

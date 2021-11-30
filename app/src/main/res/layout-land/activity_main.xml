@@ -26,7 +26,7 @@
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:layout_marginTop="32dp"
@@ -45,7 +45,7 @@
             android:layout_marginTop="24dp"
             android:layout_marginEnd="32dp"
             android:text="@string/resultado"
-            android:textColor="#1A237E"
+            android:textColor="@color/colorPrimaryDark2"
             android:textSize="24sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
@@ -56,37 +56,36 @@
             android:id="@+id/btnShare"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
             android:layout_marginTop="24dp"
             android:clickable="true"
             android:contentDescription="@string/compartilhar_o_valor_da_conta"
             android:focusable="true"
             android:tint="@android:color/black"
-            app:backgroundTint="#34E5FF"
+            app:backgroundTint="@color/colorPrimaryDark2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnSound"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textResultado"
-            app:srcCompat="@drawable/share"
-            tools:ignore="ImageContrastCheck" />
+            app:layout_constraintVertical_bias="0.238"
+            app:srcCompat="@drawable/share" />
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btnSound"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:layout_marginEnd="32dp"
             android:clickable="true"
             android:contentDescription="@string/ouvir_o_valor_da_conta"
             android:focusable="true"
             android:tint="@android:color/black"
-            app:backgroundTint="#34E5FF"
+            app:backgroundTint="@color/colorPrimaryDark2"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btnShare"
             app:layout_constraintTop_toBottomOf="@+id/textResultado"
+            app:layout_constraintVertical_bias="0.238"
             app:srcCompat="@drawable/speaker" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -107,8 +106,7 @@
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/conta"
                 android:hint="@string/digite_o_valor_da_conta_ex_82_50"
-                android:textSize="20sp"
-                tools:ignore="TextContrastCheck" />
+                android:textSize="20sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
