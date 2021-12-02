@@ -61,8 +61,8 @@
             android:clickable="true"
             android:contentDescription="@string/compartilhar_o_valor_da_conta"
             android:focusable="true"
-            android:tint="#34E5FF"
-            app:backgroundTint="#122C34"
+            android:tint="@color/cor_botao2"
+            app:backgroundTint="@color/cor_botao"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/btnSound"
             app:layout_constraintHorizontal_bias="0.5"
@@ -80,8 +80,8 @@
             android:clickable="true"
             android:contentDescription="@string/ouvir_o_valor_da_conta"
             android:focusable="true"
-            android:tint="#34E5FF"
-            app:backgroundTint="#122C34"
+            android:tint="@color/cor_botao2"
+            app:backgroundTint="@color/cor_botao"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
@@ -106,8 +106,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/conta"
+                android:gravity="center"
                 android:hint="@string/digite_o_valor_da_conta_ex_82_50"
-                android:textSize="20sp"
+                android:textSize="24sp"
                 tools:ignore="TextContrastCheck" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -128,8 +129,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:drawableStart="@drawable/peoples"
+                android:gravity="center"
                 android:hint="@string/qtd_de_pessoas"
-                android:textSize="20sp" />
+                android:textSize="24sp" />
         </com.google.android.material.textfield.TextInputLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

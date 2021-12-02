@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name" translatable="false">Deu Quanto</string>
+    <string name="app_name" translatable="false">Deu Quanto?</string>
     <string name="resultado">Resultado</string>
     <string name="todo">TODO</string>
-    <string name="digite_o_valor_da_conta_ex_82_50">digite o valor da conta (ex: 82.50)</string>
-    <string name="qtd_de_pessoas">digite a qtd. de pessoas</string>
-    <string name="logo_carteira_com_algumas_c_dulas">logo. Carteira com algumas cédulas.</string>
+    <string name="digite_o_valor_da_conta_ex_82_50">total da conta (ex: 82.50)</string>
+    <string name="qtd_de_pessoas">qtd. de pessoas</string>
+    <string name="logo_carteira_com_algumas_c_dulas">logo carteira com algumas cédulas.</string>
     <string name="ouvir_o_valor_da_conta">ouvir o valor da conta</string>
     <string name="compartilhar_o_valor_da_conta">compartilhar o valor da conta</string>
     <string name="preencha_os_campos">Preencha todos os campos!</string>
-    <string name="Deu">\Deu R$ </string>
-    <string name="por_pessoa">\ por pessoa.</string>
+    <string name="Deu">Deu R$</string>
+    <string name="por_pessoa">por pessoa.</string>
     <string name="tts_ativado">TTS Ativado</string>
     <string name="tts_nao_ativado">Sem TTS ativado</string>
 </resources>

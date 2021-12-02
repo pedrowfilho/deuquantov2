@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity implements TextWatcher, View
             int qtdPessoas = Integer.parseInt(qtdPessoasRecuperado);
             double res = valorConta/qtdPessoas;
             String resultado = decimal.format(res);
-            textResultado.setText(getString(R.string.Deu) + resultado + getString(R.string.por_pessoa));
+            textResultado.setText(getString(R.string.Deu) + " " + resultado + " " + getString(R.string.por_pessoa));
         }
     }
 
